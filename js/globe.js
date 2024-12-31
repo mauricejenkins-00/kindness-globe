@@ -18,10 +18,10 @@ class Globe {
         // Create globe geometry
         const geometry = new THREE.SphereGeometry(5, 32, 32);
         const material = new THREE.MeshPhongMaterial({
-            map: new THREE.TextureLoader().load('./earth.jpeg'),
-            bumpMap: new THREE.TextureLoader().load('./earth.jpeg'),
+            map: new THREE.TextureLoader().load('./earth.jpg'),
+            bumpMap: new THREE.TextureLoader().load('./earth.jpg'),
             bumpScale: 0.05,
-            specularMap: new THREE.TextureLoader().load('./earth.jpeg'),
+            specularMap: new THREE.TextureLoader().load('./earth.jpg'),
             specular: new THREE.Color('grey')
         });
 
