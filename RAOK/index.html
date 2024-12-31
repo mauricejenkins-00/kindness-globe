@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Acts of Kindness - Global Impact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/story-form.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>KindnessGlobe</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="submit-story">Share Your Story</a>
+            <a href="#" class="view-profile">Profile</a>
+            <a href="#" class="impact-map">Impact Map</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="globe-container">
+            <canvas id="globe-canvas"></canvas>
+            <div id="story-popup" class="hidden">
+                <h3></h3>
+                <p></p>
+                <div class="rating"></div>
+                <div class="share-buttons">
+                    <button class="share-fb"><i class="fab fa-facebook"></i></button>
+                    <button class="share-twitter"><i class="fab fa-twitter"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <select id="region-filter">
+                <option value="">All Regions</option>
+                <option value="na">North America</option>
+                <option value="sa">South America</option>
+                <option value="eu">Europe</option>
+                <option value="as">Asia</option>
+                <option value="af">Africa</option>
+                <option value="oc">Oceania</option>
+            </select>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="environmental">Environmental</option>
+                <option value="community">Community</option>
+                <option value="personal">Personal</option>
+            </select>
+        </div>
+
+        <div class="impact-counter">
+            <h2>Global Impact</h2>
+            <div id="acts-counter">0</div>
+            <p>Acts of Kindness</p>
+        </div>
+    </main>
+
+    <script src="js/globe.js"></script>
+    <script src="js/stories.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html> 
