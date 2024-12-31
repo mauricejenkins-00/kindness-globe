@@ -18,10 +18,10 @@ class Globe {
         // Create globe geometry
         const geometry = new THREE.SphereGeometry(5, 32, 32);
         const material = new THREE.MeshPhongMaterial({
-            map: new THREE.TextureLoader().load('https://media.istockphoto.com/id/1389937723/vector/cartoon-planet-earth-3d-vector-icon-on-white-background.jpg?s=612x612&w=0&k=20&c=hntEYVS5xepGQi1AIpRipUTYnH2Tp_S1TXS5M-pQe3A='),
-            bumpMap: new THREE.TextureLoader().load('https://media.istockphoto.com/id/1389937723/vector/cartoon-planet-earth-3d-vector-icon-on-white-background.jpg?s=612x612&w=0&k=20&c=hntEYVS5xepGQi1AIpRipUTYnH2Tp_S1TXS5M-pQe3A='),
+            map: new THREE.TextureLoader().load('./earth.jpeg'),
+            bumpMap: new THREE.TextureLoader().load('./earth.jpeg'),
             bumpScale: 0.05,
-            specularMap: new THREE.TextureLoader().load('https://media.istockphoto.com/id/1389937723/vector/cartoon-planet-earth-3d-vector-icon-on-white-background.jpg?s=612x612&w=0&k=20&c=hntEYVS5xepGQi1AIpRipUTYnH2Tp_S1TXS5M-pQe3A='),
+            specularMap: new THREE.TextureLoader().load('./earth.jpeg'),
             specular: new THREE.Color('grey')
         });
 
